@@ -46,7 +46,7 @@ function App() {
     <>
       <NavBar onSearch={handleSearch}  weatherData={weatherData}/>
       {weatherData && airQualityData && 
-      <div style={{ display: "flex", padding: "30px", gap: "20px" }}>
+      <div style={{ display: "flex", padding: "30px", gap: "20px",alignItems:'center' }}>
         <div style={{ flex: "1" }}>
           <HomeWheather weatherData={weatherData} />
           <p style={{marginTop:"10px",fontWeight:"bold",fontSize:"18px"}}>Last few hour's forecast</p>
